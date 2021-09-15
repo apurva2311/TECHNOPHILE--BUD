@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		College Survey Form
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color:#28bad4;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color:rgb(14, 214, 47);
+			border: 1px solid black;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>AISSMS admission - Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				what course are you pursuing?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="B.Tech.">B.Tech.</option>
+				<option value="M.Tech.">M.Tech.</option>
+				<option value="MBA">
+					MBA
+				</option>
+				<option value="B.Pharma">B.Pharma</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you recommend this college to a friend?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Are you satisfied with the teaching staff and their teaching methods?
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Extremely satisfied</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">Satisfied</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">Happy</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not Satisfied</input></label>
+			
+		</div>
+
+        <div class="form-control">
+			<label>
+                Was it easy to obtain the necessary resources from the college library?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+        <div class="form-control">
+			<label>
+                Do you think your siblings or friends will be benefited by studying at this college?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+        <div class="form-control">
+			<label>
+                How satisfied are you with the cleanliness and variety of food items available in the cafeteria?
+
+	
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Extremely satisfied</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">Satisfied</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">Happy</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not Satisfied</input></label>
+			
+		</div>
+
+        <div class="form-control">
+			<label>
+        How satisfied are you with the hostel accomodation?
+
+	
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Extremely satisfied</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">Satisfied</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">Happy</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not Satisfied</input></label>
+			
+		</div>
+
+        <div class="form-control">
+			<label>
+        Do you think faculty and support staff at the college were helpful?
+
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Extremely Helpful</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">Helpful</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">Neutral</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not Helpful</input></label>
+			
+		</div>
+
+        <div class="form-control">
+			<label>
+                What do you think about extracurricular activities?  
+
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Yes there are lots of them</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">They are just the right amount</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">They are too few</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not really</input></label>
+			
+		</div>
+
+
+        <div class="form-control">
+			<label>
+                Are there any rules against the  ragging and bullying in the college? 
+
+			</label>
+
+			<label for="inp-1">
+				<input type="radio"
+					name="inp">Yes there are lots of them</input></label>
+			<label for="inp-2">
+				<input type="radio"
+					name="inp">They are just the right amount</input></label>
+			<label for="inp-3">
+				<input type="radio"
+					name="inp">They are too few</input></label>
+			<label for="inp-4">
+				<input type="radio"
+					name="inp">Not really</input></label>
+			
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions!!(Breifly describe your college experinece)
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
